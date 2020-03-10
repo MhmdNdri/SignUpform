@@ -1,0 +1,206 @@
+@font-face{
+    font-family: iranMarker;
+    src: url(./fonts/IRANMarker.ttf);
+}
+@font-face{
+    font-family: iransansbold;
+    src: url(./fonts/IRANSans_Bold.ttf);
+}
+@font-face{
+    font-family: iransansadi;
+    src: url(fonts/IRANSans_Medium.ttf);
+}
+@font-face{
+    font-family: iransanslight;
+    src: url(fonts/IRANSans_Light.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+header{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: blueviolet;
+}
+header nav {
+    justify-content: center;
+    width: 80vw;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+header nav ul li{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    height: 100%;
+    font-family: iransansadi;
+    cursor: pointer;
+}
+header nav ul li:hover{
+    background-color: darkblue;
+    color: darkkhaki;
+}
+header span{
+    width: 10vw;
+}
+header span img{
+    cursor: pointer;
+    margin:15%;
+}
+header span img:hover{
+    background-color:blue;
+}
+header a{
+    justify-content: flex-end; 
+    width: 10vw;;
+    cursor: pointer;
+}
+header a img{
+    width: 100%;
+    height: 100%;
+}
+section{
+    display: flex;
+}
+@media screen and (max-width:900Px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.leftbox{
+    display: flex;
+    width: 50vw;
+    height: 90vh;
+    flex-direction: column;
+    background-color: grey;
+    
+}
+.leftboxUp{
+    display: flex;
+    margin: 40px 55px 40px 55px;
+    height: 68%;
+    background-color: grey;
+}
+.leftboxUp img {
+    width: 100%;
+    height: auto;
+    
+}
+.leftboxDown{
+    display: flex;
+    height: 28%;
+    background-color: lavender;
+}
+.leftboxDown ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.leftboxDown ul li{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.leftboxDown ul li.yellow{
+    width: 60px;
+    height: 40px;
+    background-color:yellow ;
+}
+.leftboxDown ul li.green{
+    width: 60px;
+    height: 40px;
+    background-color:green ;
+}
+.leftboxDown ul li.blue{
+    width: 60px;
+    height: 40px;
+    background-color:blue ;
+}
+.leftboxDown ul li.red{
+    width: 60px;
+    height: 40px;
+    background-color:red ;
+}
+
+.rightbox{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 90vh;
+}
+.rightboxUp{
+    height: 60%;
+}
+table{
+    border-collapse: collapse;
+    border: none;
+    background-color: sandybrown;
+    border-spacing: 0;
+    width: 100%;
+}
+th{
+    font-size: 20px;
+    font-family: iransansadi;
+    text-align: center;
+    padding: 15px 45px 15px 45px;
+    border-bottom: 1px solid black;
+    color: red;
+}
+td{
+    font-size: 12px;
+    font-family: iranMarker;
+    color: blueviolet;
+    text-align: center;
+    padding: 13px 40px 13px 40px;
+    border-bottom: 1px solid black; 
+}
+td:hover{
+    background-color: seagreen;
+}
+.rightboxDown{
+    height: 40%;
+    text-align: center;
+}
+p input{
+    width: 80%;
+    font-size: 20px;
+    font-family: iransansadi;
+    text-align: center;
+    margin-top: 3%;
+
+}
+.submit{
+    background-color: #231e72;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: iransansbold;
+    transition: 200ms;
+}
+.submit:hover{
+    background-color: slateblue;
+}
